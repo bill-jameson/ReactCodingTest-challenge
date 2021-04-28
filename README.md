@@ -1,2 +1,2 @@
-# ReactCodingTest-solution
+# ReactCodingTest-challenge
 Created with CodeSandbox
