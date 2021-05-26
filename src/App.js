@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function App() {
@@ -9,20 +9,25 @@ export default function App() {
     employed: true,
     wife: { name: "Jill", age: 19, sex: "F", employed: false }
   };
+  const [answer1, setAnswer1] = useState("");
+  const [answer2, setAnswer2] = useState(1);
+
+  const answer2Click = () => {};
+
+  useEffect(() => {}, []);
 
   return (
     <div className="App">
-      <h1>React Coding Test</h1>
+      <h1>Coding Challenge</h1>
 
       <div>
         <ul>
-          <li>Follow the instructions below to complete the test.</li>
-          <li>Make the app work as instructed.</li>
-          <li>Demonstrate good coding techniques.</li>
           <li>
-            Fix any errors and warnings, including highlighted syntax warnings.
+            Make the app work as instructed and demmonstrate good coding
+            techniques.
           </li>
-          <li>Feel free to ask questions.</li>
+          <li>Feel free to ask questions. Google is your "friend"</li>
+          <li>You are not expected to answer all the questions.</li>
           <li>Take your time - this is not a speed test.</li>
         </ul>
       </div>
@@ -30,11 +35,11 @@ export default function App() {
       <div>
         <h2>Question 1</h2>
         <ul>
-          <li>Add a function that executes when the page loads.</li>
           <li>
-            Make sure the function executes only once on initial page load (not
-            on each render).
+            When component mounted, change the text in the textbox below 'Hello
+            World', using a React hook.
           </li>
+          <textarea id="answer1" key="answer1" value={answer1} />
         </ul>
       </div>
 
@@ -45,25 +50,12 @@ export default function App() {
           <li>Make the button text red.</li>
           <li>Make the text a softer shade of red.</li>
           <li>Make the button disappear after 3 clicks.</li>
-          <li>Make the button re-appear after 3 seconds.</li>
         </ul>
-        <button>Click Me</button>
+        <button>Question 2 - Click Me</button>
       </div>
 
       <div>
         <h2>Question 3.</h2>
-        <div>
-          Write the properties of the object vriable obj1 to the text box below
-          when you click the button.
-        </div>
-        <ul>
-          <input id="txtObjProps" />
-        </ul>
-        <button>Click Me</button>
-      </div>
-
-      <div>
-        <h2>Question 4.</h2>
         <ul>
           <li>
             Display the TestComponent below the button, but only after the
@@ -74,11 +66,34 @@ export default function App() {
             clicked.
           </li>
         </ul>
-        <button>Click Me</button>
+        <button>Question 3 - Click Me</button>
+      </div>
+
+      <div>
+        <h2>Question 4.</h2>
+        <div>Update the button below.</div>
+        <ul>
+          <li>
+            On click, make the button disappear and re-appear after 3 seconds.
+          </li>
+        </ul>
+        <button>Question 4 - Click Me</button>
       </div>
 
       <div>
         <h2>Question 5.</h2>
+        <div>
+          Write the properties of the object vriable obj1 to the text box below
+          when you click the button.
+        </div>
+        <ul>
+          <input id="txtObjProps" />
+        </ul>
+        <button>Question 5 - Click Me</button>
+      </div>
+
+      <div>
+        <h2>Question 6.</h2>
         Code the following in the comment block following the instructions:
         <ul>
           <li>

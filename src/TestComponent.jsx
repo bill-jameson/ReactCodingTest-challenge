@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class TestComponent extends React.Component {
+export default class testComponent extends React.Component {
   render() {
     if (this.props.displayed) {
       return (
